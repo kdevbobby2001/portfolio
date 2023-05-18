@@ -1,0 +1,99 @@
+baseURL: "https://kumarbobby.netlify.app/"
+languageCode: en-us
+title: Bobby Kumar
+theme: PaperMod
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: education
+      name: Education
+      url: /education
+      weight: 20
+    - identifier: projects
+      name: Projects
+      url: /projects
+      weight: 30
+    - identifier: certification
+      name: Certification
+      url: /certification
+      weight: 40
+    - identifier: search
+      name: Search
+      url: /search
+      weight: 50
+    # - identifier: tags
+    #   name: Tags
+    #   url: /tags
+    #   weight: 60
+    # - identifier: notes
+    #   name: Notes
+    #   url: https://notes.arkalim.org
+    #   weight: 70
+
+params:
+  # theme
+  showToc: true
+  TocOpen: false
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  hideMeta: false
+
+  # for enchanced SEO
+  env: production
+
+  # Home Page
+  profileMode:
+    enabled: true
+    title: "Bobby Kumar"
+    subtitle: "Hi 👋, I'm Bobby,First-year MCA student at Chandigarh University,punjab.I have developed strong academic and personal skills that I believe would make me a valuable addition to your team. I am amiable , quick learner, with a strong work ethic and a positive attitude. I am also proficient in C++, Data structures and Algorithm, Android Development, MySQL   and I am eager to apply these skills in a practical setting."
+    imageUrl: "/home/Bobby.png"
+    imageWidth: 220
+    imageHeight: 220
+    buttons:
+       - name: Resume
+         url: "https://drive.google.com/file/d/1cvkYpch_wCwR9CGJowy8j5FYr99A6qCt/view"
+
+  # List View
+  hideDescriptionInList: false
+
+  # cover image for posts
+  cover:
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  socialIcons:
+    - name: "email"
+      url: "mailto:kdev31021@gmail.com"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/bobby-kumar-6a596122a/"
+    - name: "github"
+      url: "https://github.com/kdevbobby2001"
+    - name: "cv"
+      url: "https://drive.google.com/file/d/1ET5dd4eCFShqsD05UUlLslrfvFc2kd3q/view?usp=share_link"
+
+  # text search
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+# for search using Fuse.js
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# allow HTML in MD
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
