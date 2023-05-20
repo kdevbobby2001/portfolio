@@ -31,8 +31,6 @@ menu:
     #   weight: 60
     # - identifier: notes
     #   name: Notes
-    #   url: https://notes.arkalim.org
-    #   weight: 70
 
 params:
   # theme
